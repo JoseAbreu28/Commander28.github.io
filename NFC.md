@@ -3,7 +3,7 @@
 In today's security landscape, organizations increasingly implement Access Control List (ACL) solutions based on ISO-14443-A or ISO-14443-B standards. While these systems provide efficient access control mechanisms, they are not immune to sophisticated attacks. One such attack vector that caught my attention during a recent Red Team engagement was the NFC relay attack, reminiscent of the "[Keyless Entry System Attacks](https://archive.org/details/youtube-rhm1TiFJc7s)" presentation I attended.
 At the time, I attempted to reproduce the relay attack using an Arduino-based solution but left the project pending. However, after executing a physical Red Team assessment, the concept resurfaced. In my research for practical implementations, I discovered a fantastic open-source project on [GitHub by burja8x](https://github.com/burja8x/relay) that simplifies the relay attack process. This project leverages Proxmark devices, which are relatively affordable and easy to configure.
 
-##Understanding NFC Relay Attacks
+## Understanding NFC Relay Attacks
 NFC (Near Field Communication) relay attacks exploit the wireless nature of NFC communication, allowing an attacker to artificially extend the range between an NFC reader and a legitimate tag. Like any relay attack, this method relies on two proxies that retransmit the connection between the involved parties, tricking the system into believing that authentication is happening normally.
 From a security perspective, this attack poses a significant threat because it enables attackers to bypass authentication mechanisms that rely on physical proximity. One of the most common examples of this attack is automobile theft. Attackers can capture the signal from a key fob inside a victim’s home and relay it to a second device near the target vehicle, tricking the car into unlocking and starting without requiring the actual key. Another scenario involves ATM fraud, where attackers relay the authentication data from a contactless payment card to an ATM or a point-of-sale terminal, allowing unauthorized transactions without direct physical access to the card. Corporate access control systems are also vulnerable, as attackers can relay NFC-based authentication credentials from an employee’s badge to gain unauthorized entry into restricted areas.
 The core vulnerability exploited in NFC relay attacks is the system's reliance on the short-range nature of NFC communication. Since NFC does not inherently verify the distance between devices, attackers can manipulate the communication channel to their advantage, making it crucial for organizations and individuals to implement additional security measures such as multi-factor authentication and anomaly detection systems.
@@ -23,7 +23,7 @@ The relay tool I tested requires two computers and two Proxmark3 devices. It has
 3. **Relay communication:** The tool relays raw commands between the two devices.  
 4. **Timing extensions:** The tool utilizes additional commands (WTX) to extend the allowable response time, enhancing the attack's reliability.  
 
-##My Implementation
+## My Implementation
 For accuracy, I replicated the setup as detailed in the GitHub repository. However, for future improvements, I plan to integrate the DL533N XL module, which allows NFC reading at distances of up to 18 cm. 
 
 (video POC --> adicionar proxys e afins ) 
