@@ -12,18 +12,11 @@ Ozeki 10 stands out due to its ability to install the SMS server on an Android d
 
 ### SMS Text Mode vs. SMS PDU Mode
 
-There are two primary modes for sending SMS. **SMS Text Mode** uses a human-readable format, simplifying message sending but limiting customization. **SMS PDU Mode** (Protocol Data Unit) provides greater control over message encoding, allowing binary SMS, special character sets (GSM-7, GSM-8), and message concatenation.
+There are two primary modes for sending SMS. SMS Text Mode uses a human-readable format, simplifying message sending but limiting customization. SMS PDU Mode (Protocol Data Unit) provides greater control over message encoding, allowing binary SMS, special character sets (GSM-7, GSM-8), and message concatenation.
 
 ### Understanding Key SMS Message Types
 
-Several message types exist within the SMS protocol, each serving a different function:
-
-- **SMS-DELIVER**: Used by the network to deliver a message to a recipient.  
-- **SMS-DELIVER-REPORT**: Sent as a response to confirm message reception.  
-- **SMS-SUBMIT**: Used by a mobile device to send an SMS to the network.  
-- **SMS-SUBMIT-REPORT**: Acknowledges the submission of an SMS.  
-- **SMS-STATUS-REPORT**: Provides the status of a previously sent message.  
-- **SMS-COMMAND**: Used for special commands such as message deletion or service requests.  
+Several message types exist within the SMS protocol, each serving a different function. The **SMS-DELIVER** message is used by the network to deliver a message to a recipient, while the **SMS-DELIVER-REPORT** is sent as a response to confirm message reception. The **SMS-SUBMIT** message is used by a mobile device to send an SMS to the network, and the **SMS-SUBMIT-REPORT** acknowledges the submission of that SMS. Additionally, the **SMS-STATUS-REPORT** provides information about the status of a previously sent message. The **SMS-COMMAND** message is used for special commands such as message deletion or service requests.
 
 ### Security Concerns: Binary SMS Exploits
 
@@ -31,28 +24,18 @@ Binary SMS messages, which allow for extended functionalities, have been exploit
 
 ### Implementing an SMS Gateway
 
-Setting up an SMS gateway involves:
-
-1. Installing Ozeki 10 SMS Gateway on an Android device.  
-2. Configuring the gateway with a Windows machine for remote management.  
-3. Setting up routing rules and message processing workflows.  
-4. Ensuring security best practices to prevent unauthorized access.  
+Setting up an SMS gateway involves several steps. First, Ozeki 10 SMS Gateway must be installed on an Android device. Once installed, it must be configured to work with a Windows machine for remote management. The next step is defining routing rules and message processing workflows to ensure efficient message transmission. Lastly, security best practices must be implemented to prevent unauthorized access, such as restricting access to the gateway, using encryption where possible, and monitoring logs for suspicious activity.
 
 ### SMS Spoofing and Security Threats
 
-Another concerning vulnerability is **SMS spoofing**, where attackers manipulate the sender ID to impersonate trusted entities. A case study in this article details how spoofed SMS messages can be used for phishing attacks, fraud, and social engineering.
+Another concerning vulnerability is SMS spoofing, where attackers manipulate the sender ID to impersonate trusted entities. A case study in this article details how spoofed SMS messages can be used for phishing attacks, fraud, and social engineering.
 
 ### Current and Legacy SMS Vulnerabilities
 
-SMS has been a target of various attacks over the years, including:
+SMS has been a target of various attacks over the years. One of the most well-known vulnerabilities is interception via **SS7 protocol exploits**, which allows attackers to eavesdrop on messages and calls. **SIM swapping attacks** involve fraudsters tricking mobile carriers into transferring a victim's phone number to a new SIM card, enabling them to intercept authentication codes and take over accounts. **Silent SMS tracking** is another concern, where special SMS messages are sent without notification to track a device’s location. Fake base station attacks, often carried out using **IMSI catchers**, intercept and manipulate SMS communications by impersonating legitimate mobile towers.
 
-- **Interception via SS7 vulnerabilities**  
-- **SIM swapping attacks**  
-- **Silent SMS tracking**  
-- **Fake base station attacks (IMSI catchers)**  
-
-As SMS remains a widely used communication method, it is crucial to be aware of these vulnerabilities and take appropriate measures to secure SMS infrastructures, such as implementing encryption, strong authentication mechanisms, and monitoring for anomalies.
+As SMS remains a widely used communication method, it is crucial to secure SMS infrastructures. Implementing encryption mechanisms where applicable, enforcing strong authentication methods, and continuously monitoring for anomalies can help mitigate these risks.
 
 ## Conclusion
 
-While SMS technology remains essential, its security implications must not be overlooked. Ozeki 10 SMS Gateway offers a versatile solution for managing SMS communications, but understanding the underlying protocol and its security risks is crucial for safe implementation. Ongoing research and adaptation to emerging threats are necessary to ensure the continued reliability of SMS-based systems.  
+While SMS technology remains essential, its security implications must not be overlooked. Ozeki 10 SMS Gateway offers a versatile solution for managing SMS communications, but understanding the underlying protocol and its security risks is crucial for safe implementation. Ongoing research and adaptation to emerging threats are necessary to ensure the continued reliability of SMS-based systems.
