@@ -2,15 +2,19 @@
 
 ## Introduction  
 
-The OMG Cable is one of the most impressive cybersecurity tools available today. Initially inspired by the *COTTONMOUTH-I* project, it appears to be an ordinary charging cable. However, it conceals an embedded Wi-Fi-enabled chip that allows remote payload execution on a target system.  
+The [OMG Cable](https://shop.hak5.org/products/omg-cable) is one of the most impressive cybersecurity tools available today. Initially inspired by the *COTTONMOUTH-I* project, it appears to be an ordinary charging cable. However, it conceals an embedded Wi-Fi-enabled chip that allows remote payload execution on a target system.  
 
 I first came across this tool during my undergraduate studies, and it was one of the first cybersecurity devices I ever purchased. Its concept is similar to the well-known *Rubber Ducky*, requiring knowledge of *Ducky Script* for effective operation.  
+
+![COTTONMOUTH-I](https://guide-images.cdn.ifixit.com/igi/HPCHW1N3vpLowRXa.standard)
 
 ## How It Works  
 
 Once connected to a computer, the OMG Cable is recognized as a human interface device (HID), such as a keyboard. This allows it to send keystroke-based payloads, executing commands as if they were typed by a legitimate user. Unlike traditional USB flash drive attacks—where awareness campaigns have made users cautious of inserting unknown drives—this attack vector is far more discreet. A simple charging cable does not raise the same level of suspicion.  
 
 The OMG Cable creates a Wi-Fi connection, enabling remote access for payload execution. The attacker can control the device in real time, executing scripts to compromise the target system.  
+
+
 
 ## Evolution and Features  
 
