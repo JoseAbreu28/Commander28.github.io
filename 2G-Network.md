@@ -28,7 +28,7 @@ A detailed discussion of mobile network architectures is beyond the scope of thi
 ![2G Architecture](https://media.licdn.com/dms/image/v2/D4E12AQERuLPQunWvRA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1697831604227?e=1747872000&v=beta&t=E1JllcJ6cWRaM29Jkg-4Gqjfe4hGrLOXA7vS83JI5YI)
 
 ### Implementation of AutoCalypsoBTS  
-As the operating system, I opted for [DragonOS](https://cemaxecuter.com/) because it already contains the stable OSMOCOM binaries and works correctly.
+As the operating system, I opted for [DragonOS](https://cemaxecuter.com/) because it already contains the stable OSMOCOM binaries.
 The implementation of [AutoCalypsoBTS](https://github.com/jhonnybonny/AutoCalypsoBTS) was quite easy, you just need to configure the data for the antenna we're creating.
 As a final step, I installed [NetMonitor](https://play.google.com/store/apps/details?id=com.parizene.netmonitor) on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
 - Cell Identify (CID)  
@@ -51,7 +51,7 @@ Once my device successfully connected to the 2G network, I used [Ozeki SMS Gatew
 
 
 ### Learning Experience and Ethical Considerations  
-When I started this project, I had zero networking experience. The entire endeavor was a learning process, heavily reliant on publicly available resources and tutorials from various YouTube creators. I strongly encourage others interested in security research to explore similar projects while adhering to ethical guidelines and legal frameworks.
+When I started this project, I had zero experience of 2G networks. The entire endeavor was a learning process, heavily reliant on publicly available resources and tutorials from various YouTube creators. I strongly encourage others interested in security research to explore similar projects while adhering to ethical guidelines and legal frameworks.
 
 ### References  
 ![Some References](DATA/2025-03-20_15-14.png)
