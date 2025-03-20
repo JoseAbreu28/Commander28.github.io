@@ -52,4 +52,7 @@ The OMG Cable has evolved into one of the most effective tools for Red Team enga
 
 For those looking for alternatives, DIY projects or older tools like USB Ninja may still serve a purpose, but the OMG Cable remains the most advanced option in its category.  
 
-*For available payloads and further resources, refer to the following link:* (To be added manually)  
+*For available payloads and further resources, available [here](https://payloadhub.com/blogs/payloads)* 
+
+A simple way to protect yourself against this attack is to use a usb data blocker
+![Data_blocker](https://m.media-amazon.com/images/I/71FtF1Gdw4L.jpg)
