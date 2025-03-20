@@ -14,7 +14,7 @@ Ozeki 10 stands out due to its ability to install the SMS server on an Android d
 
 ![Android_Ozeki](DATA/IMG_8549.jpg)
 
-### SMS Text Mode vs. SMS PDU Mode
+## SMS Text Mode vs. SMS PDU Mode
 
 There are two primary modes for sending SMS. SMS Text Mode uses a human-readable format, simplifying message sending but limiting customization. [SMS PDU Mode (Protocol Data Unit)](https://www.diafaan.com/sms-tutorials/gsm-modem-tutorial/online-sms-pdu-decoder/) provides greater control over message encoding, allowing binary SMS, special character sets (GSM-7, GSM-8), and message concatenation. See more [here](https://ozeki-sms-gateway.com/p_313-sms-protocol-explained.html).
 
