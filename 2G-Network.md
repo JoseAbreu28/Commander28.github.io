@@ -4,7 +4,7 @@
 A few years ago, I began questioning whether it would be possible to scale an IMSI catcher application to identify the digital identity of individuals nearby. The goal was to capture phone numbers and correlate them with various leaked information sources.  
 During this research, I came across an incredible paper that inspired my project: [*LTE Phone Number Catcher: A Practical Attack against Mobile Privacy*](https://onlinelibrary.wiley.com/doi/10.1155/2019/7425235). This article demonstrated that mobile privacy remains vulnerable even in LTE networks as long as legacy GSM networks exist.
 
-![LTE phone number catcher model.](https://onlinelibrary.wiley.com/cms/asset/41671925-6c43-44ce-9846-1ffd4bfe1cc5/sec7425235-fig-0003-m.jpg)
+![LTE phone number catcher model.](LTE_phonecatcher.jpg)
 
 ### Summary of LTE Phone Number Catcher  
 The research highlighted that a mobile subscriber's phone number serves as a unique identifier in social networks. Unlike the IMSI, a phone number is never transmitted by the mobile device itself but may be shared when initiating a call or SMS.  
