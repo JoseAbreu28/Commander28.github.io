@@ -1,8 +1,8 @@
-## Overview of SMS Gateway and Ozeki 10 SMS Gateway
+# Overview of SMS Gateway and Ozeki 10 SMS Gateway
 
 During my project of building a 2G network, I came across the Ozeki 10 SMS Gateway. This software not only serves as a powerful SMS management tool but also provides flexibility by allowing installation on an Android device while being controlled from a Windows machine. This feature enables seamless integration and efficient message routing within a network.
 
-### What is an SMS Gateway?
+## What is an SMS Gateway?
 
 An SMS Gateway is a system that allows messages to be sent and received between a computer or server and mobile devices. It acts as an intermediary, translating messages from different protocols into a format compatible with mobile networks. Businesses and individuals use SMS gateways for bulk messaging, alerts, authentication, and communication automation.
 
@@ -31,7 +31,7 @@ Several message types exist within the SMS protocol, each serving a different fu
 
 Binary SMS messages, which allow for extended functionalities, have been exploited for security attacks. A notable example discussed in this article describes how malicious SMS messages can be crafted to exploit vulnerabilities in mobile networks and devices. Attackers can use binary SMS to send silent messages, execute remote commands, or even compromise devices. Many attacks can be carried out, I recommend this [blog](https://akaki.io/2022/transmission_and_detection_of_silent_sms_in_android) which contains very funny attacks to reproduce.
 
-### Implementing an SMS Gateway
+## Implementing an SMS Gateway
 
 Setting up an SMS gateway involves several steps. First, Ozeki 10 SMS Gateway must be installed on an Android device. Once installed, it must be configured to work with a Windows machine for remote management. The next step is defining routing rules and message processing workflows to ensure efficient message transmission. Lastly, security best practices must be implemented to prevent unauthorized access, such as restricting access to the gateway, using encryption where possible, and monitoring logs for suspicious activity.
 
@@ -41,7 +41,7 @@ Another concerning vulnerability is SMS spoofing, where attackers manipulate the
 ![Abuse1](DATA/PDU_ozeki1.png)
 ![Abuse12](DATA/pdu_ozeki.png)
 
-### Current and Legacy SMS Vulnerabilities
+## Current and Legacy SMS Vulnerabilities
 
 SMS has been a target of various attacks over the years. One of the most well-known vulnerabilities is interception via **SS7 protocol exploits**, which allows attackers to eavesdrop on messages and calls. **SIM swapping attacks** involve fraudsters tricking mobile carriers into transferring a victim's phone number to a new SIM card, enabling them to intercept authentication codes and take over accounts. **Silent SMS tracking** is another concern, where special SMS messages are sent without notification to track a device’s location. Fake base station attacks, often carried out using **IMSI catchers**, intercept and manipulate SMS communications by impersonating legitimate mobile towers.
 
