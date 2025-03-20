@@ -53,5 +53,17 @@ Once my device successfully connected to the 2G network, I used [Ozeki SMS Gatew
 ### Learning Experience and Ethical Considerations  
 When I started this project, I had zero experience of 2G networks. The entire endeavor was a learning process, heavily reliant on publicly available resources and tutorials from various YouTube creators. I strongly encourage others interested in security research to explore similar projects while adhering to ethical guidelines and legal frameworks.
 
-### References  
-![Some References](DATA/2025-03-20_15-14.png)
+### References
+## References
+
+- **Bastien Baranoff** - [Github](https://github.com/bbaranoff)  
+- **Cemaxecuter** - [Youtube Channel](https://twitter.com/janesmith)  
+- **Claremont Systems** - [Youtube Channel](https://www.youtube.com/@claremontsystems4255)  
+- **Experiments LK** - [Youtube Channel](https://www.youtube.com/@experimentslk5291)  
+- **JhonnyBonny** - [Github](https://github.com/companyxyz)  
+- **Offensive Wireless** - [Youtube Channel](https://www.youtube.com/@offensivewireless)  
+- **Super ben** - [Youtube Channel](https://www.youtube.com/@superben6483)  
+
+  
+
+  
