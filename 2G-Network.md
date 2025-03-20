@@ -41,7 +41,8 @@ By collecting these details, I could simulate a nearby cell tower. Setting my sm
 
 ### SMS Spoofing and Network Testing  
 Once my device successfully connected to the 2G network, I used OZeki SMS Gateway to send spoofed messages within the network. This allowed me to test message injection capabilities by impersonating different entities or contacts.
-![POC-1](IMG_4452.MOV)
+[![POC]()](IMG_4452.MOV)
+
 
 
 
