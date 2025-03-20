@@ -6,7 +6,7 @@ The [OMG Cable](https://shop.hak5.org/products/omg-cable) is one of the most imp
 
 I first came across this tool during my undergraduate studies, and it was one of the first cybersecurity devices I ever purchased. Its concept is similar to the well-known *Rubber Ducky*, requiring knowledge of *Ducky Script* for effective operation.  
 
-![COTTONMOUTH-I]([https://guide-images.cdn.ifixit.com/igi/HPCHW1N3vpLowRXa.standard](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/NSA_COTTONMOUTH-I.jpg/640px-NSA_COTTONMOUTH-I.jpg))
+![COTTONMOUTH-I](DATA/NSA_COTTONMOUTH-I.jpg)
 
 ## How It Works  
 
