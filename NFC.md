@@ -26,7 +26,7 @@ The relay tool I tested requires two computers and two Proxmark3 devices. It has
 ## My Implementation
 For accuracy, I replicated the setup as detailed in the GitHub repository. However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows NFC reading at distances of up to 18 cm. 
 
-[POC](IMG_0860.mov)
+![POC](IMG_0860.mov)
 
 ## The Strength of NFC Relay Attacks  
 
