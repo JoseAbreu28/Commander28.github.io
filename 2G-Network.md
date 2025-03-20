@@ -14,12 +14,16 @@ By leveraging an IMSI catcher and a 2G man-in-the-middle attack, the researchers
 Due to hardware limitations—specifically, having only a HackRF, which operates in half-duplex mode—I was unable to implement the phone number-catching attack. However, I gained valuable insights into OSMOCOM and decided to focus on building a 2G network instead.  
 To achieve this, I acquired two Motorola C123 devices and two Sysmocom USB Serial Cable CP2102 adapters. Initially, setting up a 2G network using OSMOCOM was complex due to my lack of experience. However, I discovered AutoCalypsoBTS, a project that significantly simplified the deployment process. Later, I refined my network setup using the work of Bastien Baranoff, which I will detail in a future article.
 
+![OSMOCOM BB](IMG_9993_-_Cópia.jpg)
+
 ### Overview of 2G Network Architecture  
 GSM (2G) networks operate on a well-defined architecture consisting of:  
 - **Base Transceiver Station (BTS):** Handles radio communication with mobile devices.  
 - **Base Station Controller (BSC):** Manages multiple BTS units.  
 - **Mobile Switching Center (MSC):** Connects calls and routes messages.  
 - **Home Location Register (HLR) & Visitor Location Register (VLR):** Store subscriber information and track locations.  
+
+![2G Architecture](https://media.licdn.com/dms/image/v2/D4E12AQERuLPQunWvRA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1697831604227?e=1747872000&v=beta&t=E1JllcJ6cWRaM29Jkg-4Gqjfe4hGrLOXA7vS83JI5YI)
 
 Using AutoCalypsoBTS, I installed NetMonitor on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
 - Cell Identify (CID)  
