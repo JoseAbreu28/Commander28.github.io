@@ -37,7 +37,7 @@ Setting up an SMS gateway involves several steps. First, Ozeki 10 SMS Gateway mu
 
 ### SMS Spoofing and Security Threats
 
-Another concerning vulnerability is SMS spoofing, where attackers manipulate the sender ID to impersonate trusted entities. A case study in this article details how spoofed SMS messages can be used for phishing attacks, fraud, and social engineering.
+Another concerning vulnerability is SMS spoofing, where attackers manipulate the sender ID to impersonate trusted entities. A case study in this [article](https://akaki.io/2022/analysis_and_reproduction_of_spoofed_sms-deliver) details how spoofed SMS messages can be used for phishing attacks, fraud, and social engineering.
 ![Abuse1](DATA/PDU_ozeki1.png)
 ![Abuse12](DATA/pdu_ozeki.png)
 
