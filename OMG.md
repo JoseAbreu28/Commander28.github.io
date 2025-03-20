@@ -31,6 +31,8 @@ Firmware installation is done through the *OMG Programmer*. Previously, it requi
 
 One of the most significant advancements came with the release of *Version 3* in late 2023, introducing [*HIDX StealthLink*](https://github.com/O-MG/O.MG-Firmware/wiki/HIDX-StealthLink). This feature allows for remote access and data exfiltration, even on air-gapped machines. Instead of using traditional network interfaces or external drives, it exploits raw HID communication channels, making detection much more difficult.  
 
+![HIDX](DATA/2025-03-20_15-37-2.io.png)
+
 ## Implementation 
 As a simple poc, I changed this [payload](https://payloadhub.com/blogs/payloads/windows-repair?_pos=1&_sid=d160a6ea0&_ss=r) to run on OMG-CABLE.Video [here](https://youtube.com/shorts/8Tw9N5yCq0M?si=AvyTGYA-3J1TtSvW).
 [![POC](DATA/2025-03-20_15-34.io.png)]([https://www.youtube.com/watch?v=HxkOUcvgN54](https://youtube.com/shorts/8Tw9N5yCq0M?si=AvyTGYA-3J1TtSvW))
