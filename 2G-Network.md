@@ -11,7 +11,7 @@ The research highlighted that a mobile subscriber's phone number serves as a uni
 By leveraging an IMSI catcher and a 2G man-in-the-middle attack, the researchers developed a functional phone number catcher prototype for LTE phones. They demonstrated that once a device camped on their rogue station, they could capture its phone number within seconds. Furthermore, the study emphasized that anyone with basic programming skills and knowledge of GSM/LTE specifications could build a similar setup using SDR tools and commercial off-the-shelf equipment. The authors advocated for the global deactivation of GSM networks in areas covered by 3G and 4G to mitigate these risks.
 
 ### 2G Network Implementation  
-Due to hardware limitations—specifically, having only a HackRF, which operates in half-duplex mode—I was unable to implement the phone number-catching attack. However, I gained valuable insights into OSMOCOM and decided to focus on building a 2G network instead.  
+Due to hardware limitations—specifically, having only a HackRF, which operates in half-duplex mode—I was unable to implement the phone number-catching attack. However, I gained valuable insights into [OSMOCOM BB](https://osmocom.org/projects/baseband) and decided to focus on building a 2G network instead.  
 To achieve this, I acquired two Motorola C123 devices and two Sysmocom USB Serial Cable CP2102 adapters. Initially, setting up a 2G network using OSMOCOM was complex due to my lack of experience. However, I discovered AutoCalypsoBTS, a project that significantly simplified the deployment process. Later, I refined my network setup using the work of Bastien Baranoff, which I will detail in a future article.
 
 ![OSMOCOM BB](IMG_9993_-_Cópia.jpg)
@@ -22,10 +22,12 @@ GSM (2G) networks operate on a well-defined architecture consisting of:
 - **Base Station Controller (BSC):** Manages multiple BTS units.  
 - **Mobile Switching Center (MSC):** Connects calls and routes messages.  
 - **Home Location Register (HLR) & Visitor Location Register (VLR):** Store subscriber information and track locations.  
+A detailed discussion of mobile network architectures is beyond the scope of this paper. However, for a comprehensive overview of 2G, 3G, and 4G architectures, I recommend this insightful article: [Architecture of Mobile Networks (2G, 3G, 4G)](https://www.linkedin.com/pulse/architecture-mobile-networks-2g-3g-4g-ilyes-amokrane-lezzoum-tyofe/).
 
 ![2G Architecture](https://media.licdn.com/dms/image/v2/D4E12AQERuLPQunWvRA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1697831604227?e=1747872000&v=beta&t=E1JllcJ6cWRaM29Jkg-4Gqjfe4hGrLOXA7vS83JI5YI)
 
-Using AutoCalypsoBTS, I installed NetMonitor on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
+### Implementation of AutoCalypsoBTS  
+Using [AutoCalypsoBTS](https://github.com/jhonnybonny/AutoCalypsoBTS), I installed NetMonitor on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
 - Cell Identify (CID)  
 - Local Area Code (LAC)  
 - Base Station ID Code (BSIC)  
@@ -34,12 +36,17 @@ Using AutoCalypsoBTS, I installed NetMonitor on an Android device. This applicat
 - Absolute Radio Frequency Channel Number (ARFCN)  
 
 By collecting these details, I could simulate a nearby cell tower. Setting my smartphone to 2G mode ensured it connected only to my network.
+![Network Setup](2025-03-20_15-16.io.png)
+
 
 ### SMS Spoofing and Network Testing  
 Once my device successfully connected to the 2G network, I used OZeki SMS Gateway to send spoofed messages within the network. This allowed me to test message injection capabilities by impersonating different entities or contacts.
+
+
+
 
 ### Learning Experience and Ethical Considerations  
 When I started this project, I had zero networking experience. The entire endeavor was a learning process, heavily reliant on publicly available resources and tutorials from various YouTube creators. I strongly encourage others interested in security research to explore similar projects while adhering to ethical guidelines and legal frameworks.
 
 ### References  
-(To be added manually)
+![Some References](2025-03-20_15-14.png)
