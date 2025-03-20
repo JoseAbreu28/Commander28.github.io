@@ -22,7 +22,7 @@ Over the years, the OMG Cable has seen significant improvements. Initially, only
 
 Firmware updates have greatly enhanced its functionality. Older cables, such as mine, only support *Firmware Version 1*, which has a limited graphical interface and loses connection after executing a payload. In contrast, *Firmware Versions 2 and 3* offer a much more stable experience, with an improved interface and persistent connectivity.  
 
-Firmware installation is done through the *OMG Programmer*. Previously, it required a standalone executable. Now, users can configure two Wi-Fi modes:  
+Firmware installation is done through the *OMG Programmer*. Previously, it required a standalone executable. Users can configure two Wi-Fi modes:  
 
 - **Station Mode**: Connects the cable to an existing network.  
 - **Access Point Mode**: Creates a dedicated Wi-Fi network for direct control.  
