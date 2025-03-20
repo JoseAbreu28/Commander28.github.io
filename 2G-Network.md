@@ -4,7 +4,7 @@
 A few years ago, I began questioning whether it would be possible to scale an IMSI catcher application to identify the digital identity of individuals nearby. The goal was to capture phone numbers and correlate them with various leaked information sources.  
 During this research, I came across an incredible paper that inspired my project: [*LTE Phone Number Catcher: A Practical Attack against Mobile Privacy*](https://onlinelibrary.wiley.com/doi/10.1155/2019/7425235). This article demonstrated that mobile privacy remains vulnerable even in LTE networks as long as legacy GSM networks exist.
 
-![LTE phone number catcher model.](LTE_phonecatcher.jpg)
+![LTE phone number catcher model.](DATA/LTE_phonecatcher.jpg)
 
 ### Summary of LTE Phone Number Catcher  
 The research highlighted that a mobile subscriber's phone number serves as a unique identifier in social networks. Unlike the IMSI, a phone number is never transmitted by the mobile device itself but may be shared when initiating a call or SMS.  
@@ -14,7 +14,7 @@ By leveraging an IMSI catcher and a 2G man-in-the-middle attack, the researchers
 Due to hardware limitations—specifically, having only a HackRF, which operates in half-duplex mode—I was unable to implement the phone number-catching attack. However, I gained valuable insights into [OSMOCOM BB](https://osmocom.org/projects/baseband) and decided to focus on building a 2G network instead.  
 To achieve this, I acquired two Motorola C123 devices and two Sysmocom USB Serial Cable CP2102 adapters. Initially, setting up a 2G network using OSMOCOM was complex due to my lack of experience. However, I discovered AutoCalypsoBTS, a project that significantly simplified the deployment process. Later, I refined my network setup using the work of Bastien Baranoff, which I will detail in a future article.
 
-![OSMOCOM BB](IMG_9993_-_Cópia.jpg)
+![OSMOCOM BB](DATA/IMG_9993_-_Cópia.jpg)
 
 ### Overview of 2G Network Architecture  
 GSM (2G) networks operate on a well-defined architecture consisting of:  
@@ -36,12 +36,12 @@ Using [AutoCalypsoBTS](https://github.com/jhonnybonny/AutoCalypsoBTS), I install
 - Absolute Radio Frequency Channel Number (ARFCN)  
 
 By collecting these details, I could simulate a nearby cell tower. Setting my smartphone to 2G mode ensured it connected only to my network.
-![Network Setup](2025-03-20_15-16.io.png)
+![Network Setup](DATA/2025-03-20_15-16.io.png)
 
 
 ### SMS Spoofing and Network Testing  
 Once my device successfully connected to the 2G network, I used OZeki SMS Gateway to send spoofed messages within the network. This allowed me to test message injection capabilities by impersonating different entities or contacts.
-[![POC]()](IMG_4452.MOV)
+[![Video POC](DATA/2025-03-20_15-16.io.png)](https://youtube.com/shorts/79TxvL925-o?si=1KFk9urKHfrElaAt)
 
 
 
@@ -50,4 +50,4 @@ Once my device successfully connected to the 2G network, I used OZeki SMS Gatewa
 When I started this project, I had zero networking experience. The entire endeavor was a learning process, heavily reliant on publicly available resources and tutorials from various YouTube creators. I strongly encourage others interested in security research to explore similar projects while adhering to ethical guidelines and legal frameworks.
 
 ### References  
-![Some References](2025-03-20_15-14.png)
+![Some References](DATA/2025-03-20_15-14.png)
