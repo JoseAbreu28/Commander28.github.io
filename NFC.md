@@ -11,10 +11,7 @@ The core vulnerability exploited in NFC relay attacks is the system's reliance o
 ![NFC Realy Attack](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgne3B23DZwVZFP3RD9ZRQG2rpkyxkdBToENUo65N020x9bE9nV-W4mCo8ueScyhmjsbG-u0buW3RqQmujFx490xeodLN4Oyj4ws1Xiazzi89zG1ekitzCoyeBbXrk1JvAvYVAWmus-qw/s728-rw-e365/credit-card-hacking.jpg)
 
 ## Overview of the burja8x GitHub Relay Project
-The relay tool I tested requires two computers and two Proxmark3 devices. It has been successfully tested on macOS (Silicon) and Raspberry Pi OS, using Proxmark3 Easy and Proxmark RDV2 hardware. The tool incorporates several key components:  
-
-- **Modified Iceman Fork Proxmark3 (Release v4.14831 - Frostbit)**  
-- **Mongoose Web Server Library**  
+The implementation of this project was quite straigth forward, I only needed to configure the Proxmark code for the modified version, and to do this I followed the steps described in the project.
 
 ## How It Works  
 
@@ -24,9 +21,10 @@ The relay tool I tested requires two computers and two Proxmark3 devices. It has
 4. **Timing extensions:** The tool utilizes additional commands (WTX) to extend the allowable response time, enhancing the attack's reliability.  
 
 ## My Implementation
-For accuracy, I replicated the setup as detailed in the GitHub repository. However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows NFC reading at distances of up to 18 cm. 
+For accuracy, I replicated the setup as detailed in the GitHub repository.
+A Raspberry Pi 4, Raspberry Pi Zero, Proxmark 3 Easy and Proxmark 3 RDV2 were used for this implementation.However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows NFC reading at distances of up to 18 cm. 
 
-![POC](IMG_0860.mov)
+![POC](https://youtu.be/CvHqo6z4kx0)
 
 ## The Strength of NFC Relay Attacks  
 
