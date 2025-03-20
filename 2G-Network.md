@@ -27,7 +27,7 @@ A detailed discussion of mobile network architectures is beyond the scope of thi
 ![2G Architecture](https://media.licdn.com/dms/image/v2/D4E12AQERuLPQunWvRA/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1697831604227?e=1747872000&v=beta&t=E1JllcJ6cWRaM29Jkg-4Gqjfe4hGrLOXA7vS83JI5YI)
 
 ### Implementation of AutoCalypsoBTS  
-Using [AutoCalypsoBTS](https://github.com/jhonnybonny/AutoCalypsoBTS), I installed NetMonitor on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
+Using [AutoCalypsoBTS](https://github.com/jhonnybonny/AutoCalypsoBTS), I installed [NetMonitor](https://play.google.com/store/apps/details?id=com.parizene.netmonitor) on an Android device. This application provided advanced insights into 2G/3G/4G/5G networks, including:  
 - Cell Identify (CID)  
 - Local Area Code (LAC)  
 - Base Station ID Code (BSIC)  
@@ -39,12 +39,11 @@ By collecting these details, I could simulate a nearby cell tower. Setting my sm
 ![Network Setup](DATA/2025-03-20_15-16.io.png)
 
 
-### SMS Spoofing and Network Testing  
-Once my device successfully connected to the 2G network, I used OZeki SMS Gateway to send spoofed messages within the network. This allowed me to test message injection capabilities by impersonating different entities or contacts.
+### SMS Network Testing  
+Once my device successfully connected to the 2G network, I used [Ozeki SMS Gateway](https://ozeki.hu/) to send spoofed messages within the network. This allowed me to test message injection capabilities by impersonating different entities or contacts.
 
 POC [here](https://youtube.com/shorts/79TxvL925-o?si=1KFk9urKHfrElaAt) 
 [![Video POC](DATA/2025-03-20_16-09.io.png)](https://youtube.com/shorts/79TxvL925-o?si=1KFk9urKHfrElaAt)
-
 
 
 
