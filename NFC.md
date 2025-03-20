@@ -24,10 +24,9 @@ The relay tool I tested requires two computers and two Proxmark3 devices. It has
 4. **Timing extensions:** The tool utilizes additional commands (WTX) to extend the allowable response time, enhancing the attack's reliability.  
 
 ## My Implementation
-For accuracy, I replicated the setup as detailed in the GitHub repository. However, for future improvements, I plan to integrate the DL533N XL module, which allows NFC reading at distances of up to 18 cm. 
+For accuracy, I replicated the setup as detailed in the GitHub repository. However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows NFC reading at distances of up to 18 cm. 
 
-(video POC --> adicionar proxys e afins ) 
-
+[POC](IMG_0860.mov)
 
 ## The Strength of NFC Relay Attacks  
 
