@@ -1,7 +1,7 @@
 ## Exploring 2G Network Implementation and Mobile Privacy Risks
 
 ### Introduction  
-A few years ago, I began questioning whether it would be possible to scale an IMSI catcher application to identify the digital identity of individuals nearby. The goal was to capture phone numbers and correlate them with various leaked information sources.  
+A few years ago, I began questioning whether it would be possible to scale an _International Mobile Subscriber Identity_(IMSI) catcher application to identify the digital identity of individuals nearby. The goal was to capture phone numbers and correlate them with various leaked information sources.  
 During this research, I came across an incredible paper that inspired my project: [*LTE Phone Number Catcher: A Practical Attack against Mobile Privacy*](https://onlinelibrary.wiley.com/doi/10.1155/2019/7425235). This article illustrates that mobile privacy remains vulnerable even in LTE networks as long as legacy GSM networks exist.
 
 ![LTE phone number catcher model.](DATA/LTE_phonecatcher.jpg)
