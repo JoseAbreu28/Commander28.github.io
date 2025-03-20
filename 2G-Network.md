@@ -13,7 +13,7 @@ By leveraging an IMSI catcher and a 2G man-in-the-middle attack, the researchers
 ### 2G Network Implementation  
 Due to hardware limitations—specifically, having only a HackRF, which operates in half-duplex mode—I was unable to implement the phone number-catching attack. However, I gained valuable insights into [OSMOCOM BB](https://osmocom.org/projects/baseband) and decided to focus on building a 2G network instead.  
 To achieve this, I acquired two Motorola C123 devices and two Sysmocom USB Serial Cable [CP2102](https://shop.sysmocom.de/Sysmocom-USB-serial-cable-CP2102-with-2.5mm-stereo-jack/cp2102-25) adapters. Initially, setting up a 2G network using OSMOCOM was complex due to my lack of experience. However, I discovered AutoCalypsoBTS, a project that significantly simplified the deployment process. Later, I refined my network setup using the [work](https://pl4y.readthedocs.io/en/latest/) of [Bastien Baranoff](https://github.com/bbaranoff), which I will detail in a future article.
-As the operating system, I opted for DragonOS because it already contains the stable OSMOCOM binaries and works correctly.
+As the operating system, I opted for [DragonOS](https://cemaxecuter.com/) because it already contains the stable OSMOCOM binaries and works correctly.
 The implementation of AutoCalypsoBTS was quite easy, you just need to configure the data for the antenna we're creating.
 
 ![OSMOCOM BB](DATA/IMG_9993_-_Cópia.jpg)
