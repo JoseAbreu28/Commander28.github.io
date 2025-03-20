@@ -29,7 +29,7 @@ Several message types exist within the SMS protocol, each serving a different fu
 
 ### Security Concerns: Binary SMS Exploits
 
-Binary SMS messages, which allow for extended functionalities, have been exploited for security attacks. A notable example discussed in this article describes how malicious SMS messages can be crafted to exploit vulnerabilities in mobile networks and devices. Attackers can use binary SMS to send silent messages, execute remote commands, or even compromise devices. Many attacks can be carried out, I recommend this [blog](https://akaki.io/2022/transmission_and_detection_of_silent_sms_in_android) which contains very funny attacks to reproduce.
+Binary SMS messages, which allow for extended functionalities, have been exploited for security attacks. A notable example discussed in this [article](https://www.securitynewspaper.com/2016/07/27/binary-sms-old-backdoor-new-thing/) describes how malicious SMS messages can be crafted to exploit vulnerabilities in mobile networks and devices. Attackers can use binary SMS to send silent messages, execute remote commands, or even compromise devices. Many attacks can be carried out, I recommend this [blog](https://akaki.io/2022/transmission_and_detection_of_silent_sms_in_android) which contains very funny attacks to reproduce.
 
 ## Implementing an SMS Gateway
 
