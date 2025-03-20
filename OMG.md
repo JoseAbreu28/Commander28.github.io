@@ -13,7 +13,7 @@ I first came across this tool during my undergraduate studies, and it was one of
 Once connected to a computer, the OMG Cable is recognized as a human interface device (HID), such as a keyboard. This allows it to send keystroke-based payloads, executing commands as if they were typed by a legitimate user. Unlike traditional USB flash drive attacks—where awareness campaigns have made users cautious of inserting unknown drives—this attack vector is far more discreet. A simple charging cable does not raise the same level of suspicion.  
 
 The OMG Cable creates a Wi-Fi connection, enabling remote access for payload execution. The attacker can control the device in real time, executing scripts to compromise the target system.  
-
+![OMG-Cable1](DATA/2025-03-20_15-35.io.png)
 
 
 ## Evolution and Features  
@@ -29,7 +29,11 @@ Firmware installation is done through the *OMG Programmer*. Previously, it requi
 
 ## HIDX: Stealth and Air-Gapped Attacks  
 
-One of the most significant advancements came with the release of *Version 3* in late 2023, introducing *HIDX StealthLink*. This feature allows for remote access and data exfiltration, even on air-gapped machines. Instead of using traditional network interfaces or external drives, it exploits raw HID communication channels, making detection much more difficult.  
+One of the most significant advancements came with the release of *Version 3* in late 2023, introducing [*HIDX StealthLink*](https://github.com/O-MG/O.MG-Firmware/wiki/HIDX-StealthLink). This feature allows for remote access and data exfiltration, even on air-gapped machines. Instead of using traditional network interfaces or external drives, it exploits raw HID communication channels, making detection much more difficult.  
+
+## Implementation 
+As a simple poc, I changed this [payload](https://payloadhub.com/blogs/payloads/windows-repair?_pos=1&_sid=d160a6ea0&_ss=r) to run on OMG-CABLE.Video [here](https://youtube.com/shorts/8Tw9N5yCq0M?si=AvyTGYA-3J1TtSvW).
+[![POC](DATA/2025-03-20_15-34.io.png)]([https://www.youtube.com/watch?v=HxkOUcvgN54](https://youtube.com/shorts/8Tw9N5yCq0M?si=AvyTGYA-3J1TtSvW))
 
 ## Alternative Tools  
 
