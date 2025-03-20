@@ -22,7 +22,7 @@ The implementation of this project was quite straigth forward, I only needed to 
 
 ## My Implementation
 For accuracy, I replicated the setup as detailed in the GitHub repository.
-A Raspberry Pi 4, Raspberry Pi Zero, Proxmark 3 Easy and Proxmark 3 RDV2 were used for this implementation.However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows NFC reading at distances of up to 18 cm. 
+A Raspberry Pi 4, Raspberry Pi Zero, Proxmark 3 Easy and Proxmark 3 RDV2 were used for this implementation.However, for future improvements, I plan to integrate the [DL533N XL](https://lab401.com/products/long-range-rfid-reader-writer-dl533n-xl) module, which allows ISO/IEC 14443A/B reading at distances of up to 18 cm. 
 
 [![POC](http://i.ytimg.com/vi/CvHqo6z4kx0/hqdefault.jpg)](https://www.youtube.com/watch?v=CvHqo6z4kx0)
 
